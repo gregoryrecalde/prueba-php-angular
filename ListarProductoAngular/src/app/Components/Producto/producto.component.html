@@ -21,7 +21,7 @@
             <th>{{producto.id}}</th>
             <td>{{producto.nombre}}</td>
             <td>{{producto.descripcion}}</td>
-            <td>{{producto.precio |  number: '1.2-2'}}</td>
+            <td>S/.{{producto.precio |  number: '1.2-2'}}</td>
             <td><a href="#"><img onclick="window.open(this.src)" src="http://localhost/GuardarProductoPhp/images/{{producto.id}}.jpg" alt="" width="50" height="50"></a> </td>
             <td>
                 <button  type="button" (click)="Eliminar(producto)" class="btn btn-danger">Eliminar</button>
