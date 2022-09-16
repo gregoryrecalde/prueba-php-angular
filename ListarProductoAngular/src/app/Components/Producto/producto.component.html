@@ -11,7 +11,7 @@
             <th sortable=true scope="col">Nombre</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Precio</th>
-            <th scope="col">Imagen</th>
+            <th scope="col">Imagen 📥</th>
             <th scope="col">Eliminar</th>
           </tr>
         </thead>
@@ -21,7 +21,7 @@
             <td>{{producto.nombre}}</td>
             <td>{{producto.descripcion}}</td>
             <td>{{producto.precio |  number: '1.2-2'}}</td>
-            <td><img src="http://localhost/GuardarProductoPhp/images/{{producto.id}}.jpg" alt="" width="50" height="50"> </td>
+            <td><a href="#"><img onclick="window.open(this.src)" src="http://localhost/GuardarProductoPhp/images/{{producto.id}}.jpg" alt="" width="50" height="50"></a> </td>
             <td>
                 <button  type="button" (click)="Eliminar(producto)" class="btn btn-danger">Eliminar</button>
             </td>
